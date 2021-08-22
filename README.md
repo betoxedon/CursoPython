@@ -8,3 +8,4 @@
 * Estruturas de controle - Projeto
 * List comprehension
 * Manipulação de arquivos
+* Funções
