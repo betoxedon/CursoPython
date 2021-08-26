@@ -21,6 +21,9 @@ class Projeto:
     def __str__(self):
         return f'{self.nome} ({len(self.pendentes())} tarefa(s) pendente(s))'
 
+    def __iter__(self):
+        return self.tarefas.__iter__()
+
 
 class Tarefa:
     def __init__(self, descricao):
@@ -42,7 +45,7 @@ def main():
     print(casa)
 
     casa.procurar('Lavar pratos').concluir()
-    for tarefa in casa.tarefas:
+    for tarefa in casa:
         print(f'- {tarefa}')
     print(casa)
 
@@ -51,14 +54,14 @@ def main():
     mercado.add('carne')
     mercado.add('Tomate')
     print(mercado)
-    for tarefa in mercado.tarefas:
+    for tarefa in mercado:
         print(f'- {tarefa}')
 
     comprar_carne = mercado.procurar('carne')
     comprar_carne.concluir()
     print(mercado)
 
-    for tarefa in mercado.tarefas:
+    for tarefa in mercado:
         print(f'-{tarefa}')
 
 
