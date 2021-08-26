@@ -1,6 +1,6 @@
 class Carro:
     def __init__(self, velmax=180, delta=5, vel=0):
-        self.acelerar = self.vel + self.delta
+        self.acelerar =
 
     def acelerar(self, velmax, delta=5):
         velocidade = 0
