@@ -10,3 +10,7 @@
 * Manipulação de arquivos
 * Funções
 * Pacotes
+* Programação Orientada a Objetos
+* Programação Funcional
+* Banco de Dados
+* Banco de Dados com Python
